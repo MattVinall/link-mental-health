@@ -5,6 +5,13 @@ $yellow-shade: #f1ba15;
 $aqua-green: #0ad3b4;
 $blue-shade: #65c6d7;
 $black-shade: #232323;
+
+// social colours
+$twitter-blue: #1da1f2;
+$facebook-blue: #4267b2;
+$instagram-magenta: #c32aa3;
+$youtube-red: #ff0000;
+
 // mixins
 @mixin heading($lineHeight, $fontSize, $fontWeight) {
 	font-family: "Monsterrat", sans-serif;
