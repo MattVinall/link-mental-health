@@ -227,4 +227,19 @@ h3,
 h4 {
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+  color: #232323;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  max-width: 85%;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */
