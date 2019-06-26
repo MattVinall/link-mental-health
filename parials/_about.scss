@@ -31,6 +31,7 @@
 }
 
 .about-menu {
+	margin-top: 15px;
 	&__item {
 		margin-bottom: 15px;
 		&:last-child {
@@ -40,19 +41,20 @@
 	&__link {
 		text-transform: uppercase;
 		font-size: 1.6rem;
+		font-weight: 700;
 	}
 }
 .social-menu {
 	flex-direction: row;
 	align-items: center;
 	&__item {
-		margin-right: 25px;
+		margin-right: 50px;
 		&:last-child {
 			margin-right: 0;
 		}
 	}
 	&__icon {
-		font-size: 3.5rem;
+		font-size: 4rem;
 		color: $black-shade;
 		&:hover {
 			transform: scale(1.3);

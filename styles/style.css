@@ -231,6 +231,13 @@ p {
   margin: 0;
 }
 
+h3,
+h4,
+p,
+a {
+  font-family: 'Lato', sans-serif;
+}
+
 a {
   text-decoration: none;
   color: #232323;
@@ -373,6 +380,18 @@ figure img {
   background-size: cover;
 }
 
+.anonymous:hover,
+.mariam:hover,
+.yasmine:hover,
+.jay-z:hover,
+.petition:hover,
+.story:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: 400ms ease-in;
+  transition: 400ms ease-in;
+}
+
 .partners {
   padding: 100px 0;
   background: #65c6d7;
@@ -488,6 +507,10 @@ button.flickity-prev-next-button svg {
   height: 100%;
 }
 
+.about-menu {
+  margin-top: 15px;
+}
+
 .about-menu__item {
   margin-bottom: 15px;
 }
@@ -499,6 +522,7 @@ button.flickity-prev-next-button svg {
 .about-menu__link {
   text-transform: uppercase;
   font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .social-menu {
@@ -512,7 +536,7 @@ button.flickity-prev-next-button svg {
 }
 
 .social-menu__item {
-  margin-right: 25px;
+  margin-right: 50px;
 }
 
 .social-menu__item:last-child {
@@ -520,7 +544,7 @@ button.flickity-prev-next-button svg {
 }
 
 .social-menu__icon {
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: #232323;
 }
 
@@ -551,16 +575,16 @@ footer {
   background: #0ad3b4;
 }
 
-footer p {
+footer p,
+footer a {
   font-family: "Lato", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 25px;
   padding: 25px 0;
   text-align: center;
 }
 
-footer p,
 footer a {
-  color: #ebebec;
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=style.css.map */

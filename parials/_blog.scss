@@ -63,4 +63,8 @@ figure img {
 .petition,
 .story {
 	background-size: cover;
+	&:hover {
+		transform: scale(1.02);
+		transition: 400ms ease-in;
+	}
 }
