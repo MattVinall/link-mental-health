@@ -7,7 +7,7 @@
 
 .blog-heading {
 	@include heading(22px, 4rem, 700, $dark-blue);
-	margin: 50px 0 25px 0;
+	margin: 100px 0 25px 0;
 	text-align: center;
 }
 
@@ -27,7 +27,6 @@ figure img {
 	&__item {
 		width: 33.33%;
 		height: 400px;
-		border-radius: 10px;
 	}
 }
 

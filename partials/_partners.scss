@@ -1,9 +1,8 @@
 .partners {
 	padding: 100px 0;
-	background: $blue-shade;
+	background: $dark-blue;
 	h2 {
-		@include heading(22px, 4rem, 700, $black-shade);
-		text-transform: uppercase;
+		@include heading(4px, 4rem, 700, $white-shade);
 		text-align: center;
 	}
 	button {
@@ -29,6 +28,7 @@
 		height: 400px;
 		object-fit: contain;
 		margin: 0 auto;
+		padding: 0 10px;
 	}
 }
 
@@ -45,7 +45,6 @@ button.slick-prev {
 	border-radius: 10px;
 	outline: none;
 	font-size: 1.8rem;
-	// opacity: 0;
 }
 
 button.slick-prev {
