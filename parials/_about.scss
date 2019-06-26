@@ -5,7 +5,14 @@
 	&__links-container,
 	&__social-container {
 		width: 33.33%;
-		justify-content: center;
+		justify-content: space-between;
+	}
+	&__title {
+		@include heading(22px, 3.5rem, 700, $dark-blue);
+		padding-bottom: 10px;
+	}
+	&__text {
+		@include text(25px, 1.8rem);
 	}
 }
 
@@ -13,17 +20,31 @@
 	display: flex;
 }
 
+.text-container,
 .about-menu,
 .social-menu {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+	height: 100%;
 }
 
 .about-menu {
+	&__item {
+		margin-bottom: 15px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__link {
+		text-transform: uppercase;
+		font-size: 1.6rem;
+	}
 }
 .social-menu {
 	flex-direction: row;
+	align-items: center;
 	&__item {
 		margin-right: 25px;
 		&:last-child {
@@ -31,6 +52,11 @@
 		}
 	}
 	&__icon {
-		font-size: 4rem;
+		font-size: 3.5rem;
+		color: $black-shade;
+		&:hover {
+			transform: scale(1.3);
+			transition: 400ms ease;
+		}
 	}
 }
