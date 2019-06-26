@@ -517,6 +517,7 @@ figure img {
   height: 400px;
   -o-object-fit: contain;
      object-fit: contain;
+  margin: 0 auto;
 }
 
 .slick-track {
@@ -693,12 +694,6 @@ footer a {
 }
 
 @media screen and (max-width: 800px) {
-  .about,
-  .blog,
-  .partners,
-  .about {
-    padding: 50px 0;
-  }
   .logo-container {
     display: block;
   }
@@ -733,6 +728,9 @@ footer a {
     margin-top: 50px;
     display: block;
   }
+  .navbar .hamburger {
+    padding-right: 25px;
+  }
   .grid__item {
     width: 100%;
   }
@@ -744,6 +742,16 @@ footer a {
   }
   .about__social-container {
     padding-bottom: 0;
+  }
+  .about,
+  .partners {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 470px) {
+  .navbar__mobile {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

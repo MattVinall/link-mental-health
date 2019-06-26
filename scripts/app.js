@@ -8,9 +8,9 @@ $(function() {
 
 	// slick.js
 	$('.carousel').slick({
-		slidesToShow: 3,
-		slidesToScroll: 2,
+		slidesToShow: 1,
+		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 3000
+		autoplaySpeed: 2000
 	});
 });

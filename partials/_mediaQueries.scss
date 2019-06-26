@@ -23,13 +23,6 @@
 }
 
 @media screen and (max-width: 800px) {
-	// NAVIGATION
-	.about,
-	.blog,
-	.partners,
-	.about {
-		padding: 50px 0;
-	}
 	.logo-container {
 		display: block;
 	}
@@ -54,6 +47,9 @@
 				display: block;
 			}
 		}
+		.hamburger {
+			padding-right: 25px;
+		}
 	}
 
 	// BLOG SECTION
@@ -73,5 +69,17 @@
 
 	.about__social-container {
 		padding-bottom: 0;
+	}
+
+	// GENERAL STYLES
+	.about,
+	.partners {
+		padding: 50px 0;
+	}
+}
+
+@media (max-width: 470px) {
+	.navbar__mobile {
+		width: 100%;
 	}
 }
