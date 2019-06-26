@@ -1,1 +1,12 @@
-
+footer {
+	background: $aqua-green;
+	p {
+		@include text(25px, 2.5rem);
+		padding: 25px 0;
+		text-align: center;
+	}
+	p,
+	a {
+		color: $white-shade;
+	}
+}

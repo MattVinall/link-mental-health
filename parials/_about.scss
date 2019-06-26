@@ -60,3 +60,20 @@
 		}
 	}
 }
+
+// change colors of social icons on hover
+.fa-facebook-f:hover {
+	color: $facebook-blue;
+}
+
+.fa-twitter:hover {
+	color: $twitter-blue;
+}
+
+.fa-instagram:hover {
+	color: $instagram-magenta;
+}
+
+.fa-linkedin-in:hover {
+	color: $linkedin-blue;
+}
