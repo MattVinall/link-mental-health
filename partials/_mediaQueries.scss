@@ -1,8 +1,17 @@
 // MEDIA QUERIES
 
-// -- FIRST BREAKPOINT -- //
+@media screen and (max-width: 1050px) {
+	// BLOG SECTION
+	.grid {
+		&__item {
+			width: 50%;
+			border-radius: 0;
+		}
+	}
+}
+
 @media screen and (max-width: 800px) {
-	// navigation
+	// NAVIGATION
 	.logo-container {
 		display: block;
 	}
@@ -26,6 +35,13 @@
 				margin-top: 50px;
 				display: block;
 			}
+		}
+	}
+
+	// BLOG SECTION
+	.grid {
+		&__item {
+			width: 100%;
 		}
 	}
 }

@@ -671,6 +671,13 @@ footer a {
   margin-bottom: 5px;
 }
 
+@media screen and (max-width: 1050px) {
+  .grid__item {
+    width: 50%;
+    border-radius: 0;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .logo-container {
     display: block;
@@ -705,6 +712,9 @@ footer a {
   .navbar__item--checkbox {
     margin-top: 50px;
     display: block;
+  }
+  .grid__item {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
