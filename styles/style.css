@@ -275,24 +275,24 @@ header {
           align-items: center;
 }
 
-.navbar ul,
-.navbar__menu ul {
+.navbar__item,
+.navbar__menu__item {
   font-size: 1.8rem;
   margin-right: 20px;
 }
 
-.navbar ul:last-child,
-.navbar__menu ul:last-child {
+.navbar__item:last-child,
+.navbar__menu__item:last-child {
   margin-right: 0;
 }
 
-.navbar ul--checkbox,
-.navbar__menu ul--checkbox {
+.navbar__item--checkbox,
+.navbar__menu__item--checkbox {
   display: none;
 }
 
-.navbar ul--checkbox i,
-.navbar__menu ul--checkbox i {
+.navbar__item--checkbox i,
+.navbar__menu__item--checkbox i {
   font-size: 3.5rem;
   cursor: pointer;
 }
@@ -672,6 +672,9 @@ footer a {
 }
 
 @media screen and (max-width: 800px) {
+  .logo-container {
+    display: block;
+  }
   .navbar {
     position: fixed;
     top: 0;
@@ -679,7 +682,7 @@ footer a {
     left: 0;
     z-index: 90;
   }
-  .navbar__item {
+  .navbar__menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -696,11 +699,12 @@ footer a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .navbar__item--checkbox {
-    display: block;
+  .navbar__item {
+    display: none;
   }
-  .navbar__item--checkbox i {
-    font-size: 4rem;
+  .navbar__item--checkbox {
+    margin-top: 50px;
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

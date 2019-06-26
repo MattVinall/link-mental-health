@@ -2,25 +2,29 @@
 
 // -- FIRST BREAKPOINT -- //
 @media screen and (max-width: 800px) {
-	// navigation queries
+	// navigation
+	.logo-container {
+		display: block;
+	}
 	.navbar {
 		position: fixed;
 		top: 0;
 		right: 0;
 		left: 0;
 		z-index: 90;
-		&__item {
+		&__menu {
 			display: flex;
 			flex-direction: row-reverse;
 			justify-content: space-between;
 			min-width: 95%;
 			margin: 0 auto;
 			align-items: center;
+		}
+		&__item {
+			display: none;
 			&--checkbox {
+				margin-top: 50px;
 				display: block;
-				i {
-					font-size: 4rem;
-				}
 			}
 		}
 	}
