@@ -1,0 +1,30 @@
+header {
+	background: $white-shade;
+}
+.navigation-container,
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__item {
+		font-size: 1.8rem;
+		margin-right: 20px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__link {
+		color: $dark-blue;
+		text-transform: uppercase;
+	}
+}
+
+.logo-container {
+	width: 350px;
+	padding-right: 50px;
+}
+
+.hamburger,
+.exit-responsive {
+	display: none;
+}

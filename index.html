@@ -22,7 +22,7 @@
     <!-- HEADER STARTS HERE -->
     <header>
          <!-- DESKTOP  NAVIGATION STARTS HERE -->
-        <nav class="naviagtion-container">
+        <nav class="navigation-container wrapper">
             <div class="logo-container">
                     <img src="./assets/logo.png" alt="logo of link-mental-health">
             </div>
@@ -60,7 +60,7 @@
         <h2>#ITriedTherapy</h2>
         <span class="line-through"><h3>Blog Posts</h3></span>
         <!-- BLOG SECTION STARTS HERE -->
-        <section class="blog grid wrapper" id="blog">
+        <section class="blog grid" id="blog">
             <!-- ANONYMOUS BLOG POST -->
             <div class="blog-card">
                 <article class="blog__content grid__item">
@@ -87,7 +87,7 @@
 
             <!-- YASMINE BLOG POST -->
             <div class="blog-card"></div>
-                <article class="blog__content grid__item">
+                <article class="blog__content grid__item grid__item--height2">
                     <div class="blog-image">
                         <img src="./assets/yasmine.jpg" alt="">
                     </div>
@@ -99,25 +99,25 @@
 
             <!-- JAY-Z BLOG POST -->
             <div class="blog-card">
-                <article class="blog__content grid__item">
-                    <h3>Featured Story</h3>
-                    <h4>Rapper Jay-Z says hes gone to therapy and benefited from the process. <a href="https://www.businessinsider.com/jay-z-therapy-gave-him-huge-advantage-everyday-life-2017-11">Read More</a></h4>
+                <article class="blog__content grid__item jay-z">
+                    <h3 class="blog__title">Featured Story</h3>
+                    <h4 class="blog__summary">Rapper Jay-Z says hes gone to therapy and benefited from the process. <a href="https://www.businessinsider.com/jay-z-therapy-gave-him-huge-advantage-everyday-life-2017-11">Read More</a></h4>
                 </article>
             </div>
 
             <!-- SIGN PETITION POST -->
             <div class="blog-card">
-                <article class="blog__content grid__item">
-                  <a href="https://you.leadnow.ca/petitions/torontodoestherapy-linkmentalhealth-2"><h3>Sign and Share Our Petition</h3></a>
-                  <h4>By Signing this petition, you're pledging your support for anyone who goes to therapy. Your signiature lets those around you know that it's okay to seek help</h4>
+                <article class="blog__content grid__item petition">
+                  <a href="https://you.leadnow.ca/petitions/torontodoestherapy-linkmentalhealth-2"><h3 class="blog__title">Sign and Share Our Petition</h3></a>
+                  <h4 class="blog__summary">By Signing this petition, you're pledging your support for anyone who goes to therapy. Your signiature lets those around you know that it's okay to seek help</h4>
                 </article>
             </div>
 
             <!-- WHAT'S YOUR STORY POST -->
             <div class="blog-card">
-                <article class="blog__content grid__item">
-                    <h3>Share Your Story</h3>
-                    <h4>Your story matters. <a href="mailto:admin@linkmentalhealth.com">Email us your story</a> to be featured on our blog. Help add to the conversation!</h4>
+                <article class="blog__content grid__item grid__item--width2 story">
+                    <h3 class="blog__title">Share Your Story</h3>
+                    <h4 class="blog__summary">Your story matters. <a href="mailto:admin@linkmentalhealth.com">Email us your story</a> to be featured on our blog. Help add to the conversation!</h4>
                 </article>
             </div>
         </section>
@@ -239,6 +239,8 @@
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
     </script>
+    <!-- Masonry.js -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <!-- Flickity -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
     <!-- font-awesome 5 -->

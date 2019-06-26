@@ -15,7 +15,8 @@
 }
 
 .flickity-viewport {
-	height: 600px !important;
+	height: 550px !important;
+	outline: none;
 }
 
 .carousel-cell {
@@ -36,6 +37,6 @@
 }
 
 button.flickity-prev-next-button svg {
-	height: 50px;
-	width: 50px;
+	height: 25px;
+	width: 25px;
 }

@@ -1,0 +1,38 @@
+.blog {
+	margin: 100px 0;
+	&__title {
+		@include heading(22, 2rem, 700, $yellow-shade);
+	}
+}
+
+.grid {
+	display: grid;
+	&__item {
+		width: 33.33%;
+		height: 300px;
+		--height2 {
+			height: 600px;
+		}
+		--width2 {
+			width: 66.66%;
+			height: 500px;
+		}
+	}
+}
+
+.jay-z {
+	background: url(../assets/jay-z.png);
+	background-size: cover;
+}
+
+.petition {
+	background: url(../assets/petition.png);
+	background-size: cover;
+}
+
+.story {
+	background: url(../assets/story.png);
+	background-size: cover;
+	top: 600px;
+	position: absolute;
+}
