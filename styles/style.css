@@ -258,11 +258,15 @@ header {
   background: #ebebec;
 }
 
-.navigation-container,
-.menu {
+.navbar,
+.navbar__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -271,21 +275,33 @@ header {
           align-items: center;
 }
 
-.navigation-container__item,
-.menu__item {
+.navbar ul,
+.navbar__menu ul {
   font-size: 1.8rem;
   margin-right: 20px;
 }
 
-.navigation-container__item:last-child,
-.menu__item:last-child {
+.navbar ul:last-child,
+.navbar__menu ul:last-child {
   margin-right: 0;
 }
 
-.navigation-container__link,
-.menu__link {
+.navbar ul--checkbox,
+.navbar__menu ul--checkbox {
+  display: none;
+}
+
+.navbar ul--checkbox i,
+.navbar__menu ul--checkbox i {
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+
+.navbar__link,
+.navbar__menu__link {
   color: #277394;
   text-transform: uppercase;
+  line-height: 2.9rem;
 }
 
 .logo-container {
@@ -293,9 +309,67 @@ header {
   padding-right: 50px;
 }
 
-.hamburger,
-.exit-responsive {
+#toggle__nav {
   display: none;
+}
+
+.navbar__mobile {
+  padding-top: 30px;
+  width: 400px;
+  max-height: 100vh;
+  min-height: 100vh;
+  background-color: #232323;
+  position: fixed;
+  overflow-y: scroll;
+  /* enable scrolling on a landscape resolution */
+  -webkit-overflow-scrolling: touch;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.navbar__mobile__item--close {
+  text-align: right;
+}
+
+.navbar__mobile__item--close label {
+  padding-right: 50px;
+  cursor: pointer;
+}
+
+.navbar__mobile__item:first-of-type, .navbar__mobile__item:last-of-type {
+  border: none;
+}
+
+.navbar__mobile__item {
+  color: #ebebec;
+  font-size: 3rem;
+  padding: 20px;
+  border-bottom: 1px solid #ebebec;
+}
+
+.navbar__mobile__item a {
+  color: #f4c845;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 5px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.navbar__mobile__item a:hover {
+  color: #ebebec;
+}
+
+input[type="checkbox"]:checked ~ .navbar__mobile {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .blog {
@@ -598,11 +672,35 @@ footer a {
 }
 
 @media screen and (max-width: 800px) {
-  .hamburger,
-  .exit-responsive {
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 90;
+  }
+  .navbar__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-width: 95%;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar__item--checkbox {
     display: block;
-    font-size: 2.5rem;
-    color: #232323;
+  }
+  .navbar__item--checkbox i {
+    font-size: 4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

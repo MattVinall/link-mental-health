@@ -22,39 +22,70 @@
 <body>
     <!-- HEADER STARTS HERE -->
     <header>
-        <nav class="navigation-container wrapper">
+        <nav class="navbar wrapper">
             <!-- logo container -->
             <div class="logo-container">
                 <img src="./assets/logo.png" alt="logo of link-mental-health">
             </div>
-            <!-- hamburger menu -->
-            <p class="hamburger">
-                <i class="fas fa-bars icon"></i>
-            </p>
-            <!-- hamburger menu icon -->
-            <p class="exit-responsive">
-                <i class="fas fa-times"></i>
-            </p>
-            <!-- navigation menu -->
-            <ul class="menu">
-                <li class="menu__item">
-                    <a class="menu__link hvr-underline-from-center" href="https://www.linkmentalhealth.com" target="_blank">Home</a>
+    
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link hvr-underline-from-center" href="https://www.linkmentalhealth.com" target="_blank">Home</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link hvr-underline-from-center" href="#blog">Blog</a>
+                <li class="navbar__item">
+                    <a class="navbar__link hvr-underline-from-center" href="#blog">Blog</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link hvr-underline-from-center" href="#about">About</a>
+                <li class="navbar__item">
+                    <a class="navbar__link hvr-underline-from-center" href="#about">About</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link hvr-underline-from-center" href="https://www.linkmentalhealth.com/contact-us.html" target="_blank">Contact</a>
+                <li class="navbar__item">
+                    <a class="navbar__link hvr-underline-from-center" href="https://www.linkmentalhealth.com/contact-us.html" target="_blank">Contact</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link hvr-underline-from-center" href="https://www.linkmentalhealth.com/therapists.html" target="_blank"> Therapists</a>
+                <li class="navbar__item">
+                    <a class="navbar__link hvr-underline-from-center" href="https://www.linkmentalhealth.com/therapists.html" target="_blank"> Therapists</a>
+                </li>
+                <li class="navbar__item navbar__item--checkbox">
+                    <label for="toggle__nav">
+                        <i class="fas fa-bars"></i>
+                    </label>
                 </li>
             </ul>   
         </nav>
         <!-- DESKTOP NAVIGATION ENDS HERE -->
+
+        <!-- MOBILE NAVIGATION STARTS HERE -->
+        <input type="checkbox" id="toggle__nav" />
+        <nav class="navbar__mobile">
+            <ul class="navbar__mobile__menu">
+                <li class="navbar__mobile__item navbar__mobile__item--close">
+                    <label for="toggle__nav">
+                        X
+                    </label>
+                </li>
+
+                </li>
+                <li class="navbar__mobile__item">
+                    <a href="https://www.linkmentalhealth.com"  class="navbar__mobile__link"target="_blank">Home</a>
+                </li>
+
+                <li class="navbar__mobile__item">
+                    <a href="#blog" class="navbar__mobile__link">Blog</a>
+                </li>
+
+                <li class="navbar__mobile__item">
+                    <a href="#about" class="navbar__mobile__link">About</a>
+                </li>
+
+                <li class="navbar__mobile__item">
+                    <a href="https://www.linkmentalhealth.com/contact-us.html" class="navbar__mobile__link" target="_blank">Contact</a>
+                </li>
+                
+                <li class="navbar__mobile__item">
+                    <a href="https://www.linkmentalhealth.com/therapists.html" class="navbar__mobile__link" target="_blank">Therapists</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- MOBILE NAVIAGATION ENDS HERE -->
     </header>
     <!-- HEADER ENDS HERE -->
 
