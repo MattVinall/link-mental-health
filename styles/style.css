@@ -292,39 +292,58 @@ header {
   display: none;
 }
 
+.blog {
+  margin: 100px 0;
+}
+
 .blog__title {
   font-family: "Monsterrat", sans-serif;
   color: #f1ba15;
-  font-size: 2rem;
-  line-height: 2;
+  font-size: 2.5rem;
+  line-height: 22px;
   font-weight: 700;
+}
+
+.blog-heading {
+  font-family: "Monsterrat", sans-serif;
+  color: #277394;
+  font-size: 4rem;
+  line-height: 22px;
+  font-weight: 700;
+  margin: 50px 0 25px 0;
+  text-align: center;
+}
+
+.blog-sub-heading {
+  font-family: "Monsterrat", sans-serif;
+  color: #232323;
+  font-size: 3rem;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: 1200px;
+  background-position: center;
 }
 
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  border: 2px solid tomato;
 }
 
 .grid__item {
   width: 33.33%;
   height: 400px;
-}
-
-.grid__item --height2 {
-  height: 800px;
+  border-radius: 10px;
 }
 
 .grid__item --width2 {
-  width: 100%;
-}
-
-.grid__item:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: 300ms ease;
-  transition: 300ms ease;
+  width: 66.66%;
+  height: 400px;
 }
 
 .anonymous {
@@ -335,39 +354,40 @@ header {
   background: url(../assets/mariam.jpg);
 }
 
-.yasmine {
-  height: 800px !important;
-}
-
 .jay-z {
   background: url(../assets/jay-z.png);
 }
 
-.blog-card .story {
-  background: url(../assets/story.png);
+.story {
+  background: url(../assets/story.jpg);
   background-repeat: no-repeat;
+  width: 66.66%;
+  background-position: center;
 }
 
 .petition {
   background: url(../assets/petition.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .anonymous,
 .mariam,
 .yasmine,
 .jay-z,
-.petition {
+.petition,
+.story {
   background-size: cover;
-  opacity: 0.8;
 }
 
 .partners {
-  margin: 100px 0;
+  padding: 100px 0;
+  background: #65c6d7;
 }
 
 .partners h2 {
   font-family: "Monsterrat", sans-serif;
-  color: #277394;
+  color: #232323;
   font-size: 4rem;
   line-height: 22px;
   font-weight: 700;
@@ -397,7 +417,6 @@ header {
   margin-top: 50px;
   width: 100%;
   height: 500px;
-  background: #65c6d7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,5 +441,10 @@ header {
 button.flickity-prev-next-button svg {
   height: 25px;
   width: 25px;
+}
+
+.about {
+  background: #ebebec;
+  padding: 100px 0;
 }
 /*# sourceMappingURL=style.css.map */

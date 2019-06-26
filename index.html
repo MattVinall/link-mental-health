@@ -57,8 +57,8 @@
     <!-- HEADER ENDS HERE -->
 
     <main>
-        <h2>#ITriedTherapy</h2>
-        <span class="line-through"><h3>Blog Posts</h3></span>
+        <h2 class="blog-heading">#ITriedTherapy</h2>
+        <span class="line-through"><h3 class="blog-sub-heading">Blog Posts</h3></span>
         <!-- BLOG SECTION STARTS HERE -->
         <section class="blog grid" id="blog">
             <!-- ANONYMOUS BLOG POST -->
@@ -73,29 +73,35 @@
             <!-- MARIAM BLOG POST -->
             <div class="blog-card">
                 <article class="blog__content grid__item mariam">
-                    <h3 class="blog__title">Mariam</h3>
-                    <h4 class="blog__summary">How Culture and religion impacted the stigma surrounding mental health for me</h4>
-                    <p class="blog__date">9 October 2018</p>
+                    <div class="blog__text-container">
+                        <h3 class="blog__title">Mariam</h3>
+                        <h4 class="blog__summary">How Culture and religion impacted the stigma surrounding mental health for me</h4>
+                        <p class="blog__date">9 October 2018</p>
+                    </div>
                 </article>
             </div>
 
             <!-- YASMINE BLOG POST -->
             <div class="blog-card">
-                <article class="blog__content grid__item grid__item--height2 yasmine">
-                    <div class="blog-image">
+                <article class="blog__content grid__item grid__item--height3 yasmine">
+                    <figure class="blog__image">
                         <img src="./assets/yasmine.jpg" alt="">
+                    </figure>
+                    <div class="blog__text-container">
+                        <h3 class="blog__title">Yasmine</h3>
+                        <h4 class="blog__summary">How #ITriedTherapy For the First Time</h4>
+                        <p class="blog__date">30 January 2019</p>
                     </div>
-                    <h3 class="blog__title">Yasmine</h3>
-                    <h4 class="blog__summary">How #ITriedTherapy For the First Time</h4>
-                    <p class="blog__date">30 January 2019</p>
                 </article>
             </div>
 
             <!-- JAY-Z BLOG POST -->
             <div class="blog-card">
                 <article class="blog__content grid__item jay-z">
-                    <h3 class="blog__title">Featured Story</h3>
-                    <h4 class="blog__summary">Rapper Jay-Z says hes gone to therapy and benefited from the process. <a href="https://www.businessinsider.com/jay-z-therapy-gave-him-huge-advantage-everyday-life-2017-11">Read More</a></h4>
+                    <div class="blog__text-container">
+                        <h3 class="blog__title">Featured Story</h3>
+                        <h4 class="blog__summary">Rapper Jay-Z says hes gone to therapy and benefited from the process. <a href="https://www.businessinsider.com/jay-z-therapy-gave-him-huge-advantage-everyday-life-2017-11">Read More</a></h4>
+                    </div>
                 </article>
             </div>
 
@@ -109,7 +115,7 @@
 
             <!-- WHAT'S YOUR STORY POST -->
             <div class="blog-card">
-                <article class="blog__content grid__item story">
+                <article class="blog__content grid__item grid__item--width2 story">
                     <h3 class="blog__title">Share Your Story</h3>
                     <h4 class="blog__summary">Your story matters. <a href="mailto:admin@linkmentalhealth.com">Email us your story</a> to be featured on our blog. Help add to the conversation!</h4>
                 </article>
@@ -237,6 +243,9 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <!-- Flickity -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
+
+    <!-- Slick.js -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- font-awesome 5 -->
     <script src="https://kit.fontawesome.com/68de923c34.js"></script>
     <script src="scripts/app.js"></script>

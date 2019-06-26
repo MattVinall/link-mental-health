@@ -1,7 +1,8 @@
 .partners {
-	margin: 100px 0;
+	padding: 100px 0;
+	background: $blue-shade;
 	h2 {
-		@include heading(22px, 4rem, 700, $dark-blue);
+		@include heading(22px, 4rem, 700, $black-shade);
 		text-transform: uppercase;
 		text-align: center;
 	}
@@ -23,7 +24,6 @@
 	margin-top: 50px;
 	width: 100%;
 	height: 500px;
-	background: $blue-shade;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
