@@ -420,11 +420,6 @@ figure img {
   color: #65c6d7;
 }
 
-.flickity-viewport {
-  height: 550px !important;
-  outline: none;
-}
-
 .carousel-cell {
   margin-top: 50px;
   width: 100%;
@@ -450,9 +445,23 @@ figure img {
      object-fit: contain;
 }
 
-button.flickity-prev-next-button svg {
-  height: 25px;
-  width: 25px;
+.slick-track {
+  width: 100%;
+  margin: 25px auto;
+}
+
+button.slick-next,
+button.slick-prev {
+  padding: 10px 20px;
+  background: #ebebec;
+  color: #277394;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.8rem;
+}
+
+button.slick-prev {
+  margin-top: 25px;
 }
 
 .about {

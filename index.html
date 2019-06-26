@@ -12,6 +12,7 @@
     <meta property="og:url" content="https://www.linkmentalhealth.com/blog.html">
     <meta property="og:image" content="">   
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,700,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="styles/hover-min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -45,10 +46,10 @@
                     <a class="menu__link hvr-underline-from-center" href="#about">About</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link hvr-underline-from-center" href="#contact">Contact</a>
+                    <a class="menu__link hvr-underline-from-center" href="https://www.linkmentalhealth.com/contact-us.html" target="_blank">Contact</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link hvr-underline-from-center" href="https://www.linkmentalhealth.com/therapists.html" target="_blank">For Therapists</a>
+                    <a class="menu__link hvr-underline-from-center" href="https://www.linkmentalhealth.com/therapists.html" target="_blank"> Therapists</a>
                 </li>
             </ul>   
         </nav>
@@ -126,7 +127,7 @@
         <section class="partners" id="partners">
             <h2>Partners</h2>
             <!-- FLICKITY CAROUSEL STARTS HERE -->
-            <div class="carousel">
+            <div class="carousel wrapper">
                 <div class="carousel-cell">
                     <img src="./assets/communitech.png" alt="logo of communitech">
                 </div>
@@ -154,7 +155,7 @@
         <!-- PARTNERS SECTION ENDS HERE -->
 
         <!-- ABOUT SECTIONS STARTS HERE -->
-        <section class="about">  
+        <section class="about" id="about">  
             <div class="about-container wrapper">
                 <!-- ABOUT TEXT -->
                 <div class="about__text-container">
@@ -194,21 +195,25 @@
                 <!-- ABOUT SOCIAL ICONS -->
                 <div class="about__social-container">
                     <ul class="social-menu">
+
                         <li class="social-menu__item">
                             <a href="https://www.facebook.com/LinkMentalHealth" class="socal-menu__link" target="_blank">
                                 <i class="fab fa-facebook-f social-menu__icon"></i>
                             </a>
                         </li>
+
                         <li class="social-menu__item">
                             <a href="https://twitter.com/linkmenthealth" class="socal-menu__link" target="_blank">
                                 <i class="fab fa-twitter social-menu__icon"></i>
                             </a>
                         </li>
+
                         <li class="social-menu__item">
                             <a href="https://www.instagram.com/linkmentalhealth/" class="socal-menu__link" target="_blank">
                                 <i class="fab fa-instagram social-menu__icon"></i> 
                             </a>
                         </li>
+
                         <li class="social-menu__item">
                             <a href="https://www.linkedin.com/company/linkmentalhealth/" class="socal-menu__link" target="_blank">
                                 <i class="fab fa-linkedin-in social-menu__icon"></i>
@@ -231,19 +236,21 @@
     <!-- FOOTER ENDS HERE  -->
 
     <!-- SCRIPTS -->
+
     <!-- jQuery -->
     <script
 		src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
     </script>
+
     <!-- Masonry.js -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <!-- Flickity -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
 
     <!-- Slick.js -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
     <!-- font-awesome 5 -->
     <script src="https://kit.fontawesome.com/68de923c34.js"></script>
     <script src="scripts/app.js"></script>
